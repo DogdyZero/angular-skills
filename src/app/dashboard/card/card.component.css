@@ -1,3 +1,26 @@
 .example-card {
+  position: relative;
     max-width: 400px;
+    height: 550px;
+    border-radius: 5px;
   }
+  .text-center{
+    text-align: center;
+  }
+  img{
+    max-width: 100%;
+    width:350px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .mt-15px{
+    margin-top:15px;
+  }
+  .l-7px{
+    left:7px;
+  }
+  .buttons{
+    position: absolute;
+    bottom:10px;
+  }
+  

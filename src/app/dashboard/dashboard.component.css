@@ -1,0 +1,8 @@
+.loading-spinning{
+    margin-left: 46%;
+}
+@media only screen and (max-width: 600px) {
+    .loading-spinning {
+        margin-left: 36%;
+    }
+  }

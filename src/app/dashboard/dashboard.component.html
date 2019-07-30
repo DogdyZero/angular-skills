@@ -1,2 +1,15 @@
 <!--TODO: melhorar o layout dos cards para exibir ao menos 2 por linha em telas > md, e pequenas (sm) 1 -->
-<app-card [card]="card" *ngFor="let card of cards"></app-card>
+
+<mat-spinner  class="loading-spinning" *ngIf="showSpinner" diameter="100"></mat-spinner>
+
+<div fxFlex fxLayout="column" >
+    <div fxLayout="row wrap">
+        <app-card [card]="card" *ngFor="let card of cards" 
+        fxFlex="33"
+        fxFlex.md="33"
+        fxFlex.sm="50"
+        fxFlex.xs="100"
+        fxLayout="column"
+        style="padding: 5px;"></app-card>
+    </div>
+</div>
